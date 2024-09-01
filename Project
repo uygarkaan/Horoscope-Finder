@@ -1,0 +1,185 @@
+import java.util.Scanner;
+
+public class HoroscopeFinder {
+    public static void main(String[] args) {
+
+        /**
+         * This GPA calculator was created by @uygarkaan.
+         * You can find more projects and tutorials at https://github.com/uygarkaan
+         */
+
+        Scanner scanner = new Scanner(System.in);
+        // Define zodiac signs
+        String aries = "Aries";
+        String taurus = "Taurus";
+        String gemini = "Gemini";
+        String cancer = "Cancer";
+        String leo = "Leo";
+        String virgo = "Virgo";
+        String libra = "Libra";
+        String scorpio = "Scorpio";
+        String sagittarius = "Sagittarius";
+        String capricorn = "Capricorn";
+        String aquarius = "Aquarius";
+        String pisces = "Pisces";
+
+        int month, day;
+        // Ask the user to enter their birth month
+        System.out.println("Enter your birth month (1-12): ");
+        month = scanner.nextInt();
+        // Ask the user to enter their birth day
+        System.out.println("Enter your birth day: ");
+        day = scanner.nextInt();
+
+        // Determine the zodiac sign based on the month and day
+        switch (month) {
+            case 1:
+                if (day >= 1 && day <= 31) {
+                    if (day < 22) {
+                        System.out.println("Your zodiac sign is: " + capricorn);
+                    } else {
+                        System.out.println("Your zodiac sign is: " + aquarius);
+                    }
+                } else {
+                    System.out.println("Invalid day entered");
+                }
+                break;
+
+            case 2:
+                if (day >= 1 && day <= 29) {  // February can have 28 or 29 days
+                    if (day < 20) {
+                        System.out.println("Your zodiac sign is: " + aquarius);
+                    } else {
+                        System.out.println("Your zodiac sign is: " + pisces);
+                    }
+                } else {
+                    System.out.println("Invalid day entered");
+                }
+                break;
+
+            case 3:
+                if (day >= 1 && day <= 31) {
+                    if (day < 21) {
+                        System.out.println("Your zodiac sign is: " + pisces);
+                    } else {
+                        System.out.println("Your zodiac sign is: " + aries);
+                    }
+                } else {
+                    System.out.println("Invalid day entered");
+                }
+                break;
+
+            case 4:
+                if (day >= 1 && day <= 30) {
+                    if (day < 21) {
+                        System.out.println("Your zodiac sign is: " + aries);
+                    } else {
+                        System.out.println("Your zodiac sign is: " + taurus);
+                    }
+                } else {
+                    System.out.println("Invalid day entered");
+                }
+                break;
+
+            case 5:
+                if (day >= 1 && day <= 31) {
+                    if (day <= 21) {
+                        System.out.println("Your zodiac sign is: " + taurus);
+                    } else {
+                        System.out.println("Your zodiac sign is: " + gemini);
+                    }
+                } else {
+                    System.out.println("Invalid day entered");
+                }
+                break;
+
+            case 6:
+                if (day >= 1 && day <= 30) {
+                    if (day < 23) {
+                        System.out.println("Your zodiac sign is: " + gemini);
+                    } else {
+                        System.out.println("Your zodiac sign is: " + cancer);
+                    }
+                } else {
+                    System.out.println("Invalid day entered");
+                }
+                break;
+
+            case 7:
+                if (day >= 1 && day <= 31) {
+                    if (day < 23) {
+                        System.out.println("Your zodiac sign is: " + cancer);
+                    } else {
+                        System.out.println("Your zodiac sign is: " + leo);
+                    }
+                } else {
+                    System.out.println("Invalid day entered");
+                }
+                break;
+
+            case 8:
+                if (day >= 1 && day <= 31) {
+                    if (day < 23) {
+                        System.out.println("Your zodiac sign is: " + leo);
+                    } else {
+                        System.out.println("Your zodiac sign is: " + virgo);
+                    }
+                } else {
+                    System.out.println("Invalid day entered");
+                }
+                break;
+
+            case 9:
+                if (day >= 1 && day <= 30) {
+                    if (day < 23) {
+                        System.out.println("Your zodiac sign is: " + virgo);
+                    } else {
+                        System.out.println("Your zodiac sign is: " + libra);
+                    }
+                } else {
+                    System.out.println("Invalid day entered");
+                }
+                break;
+
+            case 10:
+                if (day >= 1 && day <= 31) {
+                    if (day < 22) {
+                        System.out.println("Your zodiac sign is: " + libra);
+                    } else {
+                        System.out.println("Your zodiac sign is: " + scorpio);
+                    }
+                } else {
+                    System.out.println("Invalid day entered");
+                }
+                break;
+
+            case 11:
+                if (day >= 1 && day <= 30) {
+                    if (day < 23) {
+                        System.out.println("Your zodiac sign is: " + scorpio);
+                    } else {
+                        System.out.println("Your zodiac sign is: " + sagittarius);
+                    }
+                } else {
+                    System.out.println("Invalid day entered");
+                }
+                break;
+
+            case 12:
+                if (day >= 1 && day <= 31) {
+                    if (day < 23) {
+                        System.out.println("Your zodiac sign is: " + sagittarius);
+                    } else {
+                        System.out.println("Your zodiac sign is: " + capricorn);
+                    }
+                } else {
+                    System.out.println("Invalid day entered");
+                }
+                break;
+
+            default:
+                System.out.println("Invalid month entered");
+        }
+        scanner.close();
+    }
+}
